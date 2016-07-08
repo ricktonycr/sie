@@ -1,4 +1,4 @@
-describe("Un notificacion", function() {
+describe("Un notificacion [manejo de errores]", function() {
  
     var notificacion;
  

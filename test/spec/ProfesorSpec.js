@@ -1,4 +1,4 @@
-describe("Un profesor", function() {
+describe("Un profesor [caminos independientes]", function() {
  
     var profesor;
  

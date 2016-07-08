@@ -1,4 +1,4 @@
-describe("Una lista de cursos", function() {
+describe("Una lista de cursos [condiciones límites]", function() {
  
     var lista;
  
@@ -54,7 +54,7 @@ describe("Una lista de cursos", function() {
         });
  
         it("debe de retornar el Curso indicado o null", function() {
-            expect(lista.obtenerCurso(2)).toBe(1);
+            expect(lista.obtenerCurso(1).obtenerId()).toBe(1234);
         });
     });
 });

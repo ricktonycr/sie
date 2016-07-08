@@ -1,4 +1,4 @@
-describe("Un curso", function() {
+describe("Un curso [estructura de datos]", function() {
  
     var curso;
  

@@ -36,5 +36,5 @@ Notificacion.prototype.recibir = function(){
 
 Notificacion.prototype.cancelar = function(){
   this.estado = "cancelado";
-  alert("Ocurrió un error, contacte al administrador, codigo de error: a24");
+  console.error("Ocurrió un error, contacte al administrador, codigo de error: a24");
 };
