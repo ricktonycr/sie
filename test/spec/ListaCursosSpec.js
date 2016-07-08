@@ -41,4 +41,20 @@ describe("Una lista de cursos", function() {
             expect(lista.cursosProfesor(3333).longitud()).toBe(1);
         });
     });
+
+    describe("cuando obtienes un curso según el índice", function() {
+ 
+        beforeEach(function() {
+            var curso1 = new Curso("Nuevo Curso 1",1234);
+            curso1.cambiarProfesor(3333);
+            var curso2 = new Curso("Nuevo Curso 2",1234);
+            curso2.cambiarProfesor(4444);
+            lista.añadirCurso(curso1);
+            lista.añadirCurso(curso2);
+        });
+ 
+        it("debe de retornar el Curso indicado o null", function() {
+            expect(lista.obtenerCurso(2)).toBe(1);
+        });
+    });
 });

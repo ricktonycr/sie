@@ -32,4 +32,16 @@ describe("Un profesor", function() {
             expect(profesor.obtenerCursos().estaVacio()).toBe(true);
         });
     });
+
+    describe("Cuando se obtienen los cursos", function() {
+        var cursos;
+        beforeEach(function() {
+            profesor.cambiarNombre("René Descartes");
+            var cursos=profesor.obtenerCursos();
+        });
+ 
+        it("debe ser el mismo objeto de lista de cursos", function() {
+            expect(profesor.obtenerCursos()===cursos).toBe(true);
+        });
+    });
 });

@@ -46,3 +46,7 @@ ListaCursos.prototype.removerCurso = function(id){
     }
   }
 };
+
+ListaCursos.prototype.obtenerCurso = function(index){
+  return this.cursos[index];
+};
